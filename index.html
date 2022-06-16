@@ -1,16 +1,57 @@
-<html>
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en-gb" class="no-js">
+<!--<![endif]-->
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-<input class="user-input" id="myinput" type="text" onchange="refreshqr()" placeholder="QR Generator Gratis">
-<p class='note'>Supports Dynamic Codes, Tracking, Analytics, Free text, vCards and more.</p>
-<button class="button" onclick="refreshqr()">Generate QR Code</button>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--[if lt IE 9]> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+<title>QR Code Generator</title>
+<meta name="description" content="">
+<meta name="author" content="WebThemez">
+<!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!--[if lte IE 8]>
+		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
+	<![endif]-->
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<link href="css/animate.css" rel="stylesheet" media="screen">
+<!-- Owl Carousel Assets -->
+<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+<!-- Font Awesome -->
+<link href="font/css/font-awesome.min.css" rel="stylesheet">
+  
+    <style>
+.user-input {width: 100%;outline: none;border: none;border-radius: 0.5rem;background: #9b8774ad;}
+.button {display:inline-flex;align-items:center; margin:10px 0;padding:12px 15px;outline:0;border:0; border-radius:3px;line-height:20px; color:#fffdfc; background:#204ecf; font-size:14px;white-space:nowrap;overflow:hidden;max-width:320px}
+</style>
+  
+</head>
+
+<body>
+<style>
+.user-input {width: 50%;outline: none;border: none;border-radius: 0.5rem;background: #9b8774ad; padding: 25px; margin-top: 50px;}
+.button {display:inline-flex;align-items:center; margin:10px 0;padding:12px 15px;outline:0;border:0; border-radius:3px;line-height:20px; color:#fffdfc; background:#204ecf; font-size:14px;white-space:nowrap;overflow:hidden;max-width:320px}
+</style>
+
+<center><input class="user-input" id="myinput" type="text" onchange="refreshqr()" placeholder="Masukkan QR Code disini"></center>
+<p class='note' align="center">Kalian Bisa Generate QR Code secara gratis disini</p>
+<center><button class="button" onclick="refreshqr()">Generate QR Code</button></center>
 <br><br>
 <div align="center" id="yourid"></div>
-    <script src="script.js"></script>
-    <script>
-      <!--[ Script to QR Code Generator ]-->
+<br><br><br><br>
+    <center><p><b>Terima Kasih telah pakai layanan kami</b></p></center>
+    
+<!--[ Script to QR Code Generator ]-->
     <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs@master/qrcode.js"></script>
 <script type="text/javascript">
 
@@ -27,6 +68,5 @@ function refreshqr(){
 }
   
 </script>
-  </body>
-  
+    </body>
 </html>
